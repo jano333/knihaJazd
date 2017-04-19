@@ -1,0 +1,602 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="sk">
+<head>
+    <title></title>
+    <link rel="SHORTCUT ICON" href="/iis/hr/dochadzka.nsf/img_ApplicationIcon16">
+    <script type="text/javascript" src="/xsp/.ibmxspres/dojoroot-1.6.1/dojo/dojo.js" djConfig="locale: 'sk', parseOnLoad: true"></script>
+    <script type="text/javascript" src="/xsp/.ibmxspres/dojoroot-1.6.1/ibm/xsp/widget/layout/layers/xspClientDojo.js"></script>
+    <script type="text/javascript" src="/xsp/.ibmxspres/dojoroot-1.6.1/ibm/xsp/widget/layout/layers/xspClientDojoUI.js"></script>
+    <script type="text/javascript">dojo.require('dojo.parser')</script>
+    <link rel="stylesheet" type="text/css" href="/oneuiv2.1/base/core.css">
+    <link rel="stylesheet" type="text/css" href="/oneuiv2.1/base/dojo.css">
+    <link rel="stylesheet" type="text/css" href="/oneuiv2.1/defaultTheme/defaultTheme.css">
+    <link rel="stylesheet" type="text/css" href="/oneuiv2.1/defaultTheme/dojoTheme.css">
+    <link rel="stylesheet" type="text/css" href="/xsp/.ibmxspres/dojoroot-1.6.1/dijit/themes/tundra/tundra.css">
+    <link rel="stylesheet" type="text/css" href="/xsp/.ibmxspres/dojoroot-1.6.1/ibm/domino/widget/layout/css/domino-default.css">
+    <link rel="stylesheet" type="text/css" href="/domjava/xsp/theme/oneuiv2.1/xsp.css">
+    <link rel="stylesheet" type="text/css" href="/domjava/xsp/theme/oneuiv2.1/xspLTR.css">
+    <script type="text/javascript">dojo.registerModulePath('extlib', '/xsp/.ibmxspres/.extlib');</script>
+    <script type="text/javascript">dojo.require('extlib.theme.OneUIA11Y')</script>
+    <link rel="stylesheet" type="text/css" href="https://iis.posam.sk/iis/home.nsf/icons.css">
+    <link rel="stylesheet" type="text/css" href="https://iis.posam.sk/iis/home.nsf/oneui_fix.css">
+    <link rel="stylesheet" type="text/css" href="https://iis.posam.sk/iis/home.nsf/iis_layout.css">
+    <link rel="stylesheet" type="text/css" href="https://iis.posam.sk/iis/home.nsf/iis_theme.css">
+    <link rel="stylesheet" type="text/css" href="/iis/hr/dochadzka.nsf/application_layout.css">
+    <script type="text/javascript">dojo.require('dijit.form.Form')</script>
+    <script type="text/javascript">dojo.require('dijit.form.DateTextBox')</script>
+</head>
+<body class="xsp lotusui tundra">
+<form id="view:_id1" method="post" action="/iis/hr/dochadzka.nsf/home.xsp" class="lotusForm" enctype="multipart/form-data" dojoType="dijit.form.Form">
+    <div class="lotusFrame" id="view:_id1:_id2:oneUILayout1">
+        <div class="lotusBanner" role="banner">
+            <div class="lotusRightCorner">
+                <div class="lotusInner">
+                    <a href="#lotusMainContent" accesskey="S" class="lotusAccess"><img src="/oneuiv2.1/images/blank.gif" alt="Skip to main content link. Accesskey S"></a><span style="float:left;vertical-align:middle;margin-right: 5px;"><img src="https://iis.posam.sk/iis/home.nsf/PosAm%20Logo.png" alt="Banner Product Logo" width="112px" height="28px"></span>
+                    <ul id="view:_id1:_id2:oneUILayout1_ul_container" class="lotusInlinelist lotusUtility">
+                        <li class="lotusFirst"><a href="https://iis.posam.sk/iis/home.nsf/pozicia.xsp" style="text-decoration:none">Hud&aacute;k J&aacute;n (Program&aacute;tor)</a></li>
+                    </ul>
+
+                    <ul id="view:_id1:_id2:oneUILayout1_al_container" style="float: left" class="lotusInlinelist lotusLinks">
+                        <li class="lotusFirst lotusSelected lotusFirst lotusSelected"><a href="https://iis.posam.sk/iis/home.nsf/" style="text-decoration:none">Domov</a></li>
+                        <li><a href="https://iis.posam.sk/iis/system/agenda.nsf/" style="text-decoration:none">Agenda</a></li>
+                        <li><a href="javascript:window.open('https://con.posam.sk/','_blank');void(0);" style="text-decoration:none">Komunita PosAm "all"</a></li>
+                        <li><a href="mailto:marian%20sefcik?subject=IIS%3A%20Hl%C3%A1senie%20probl%C3%A9mu" style="text-decoration:none">Nahl&aacute;si&#357; probl&eacute;m!</a></li>
+                        <li><a href="javascript:window.open('http://planview.posam.sk/planview/TrackTime/TimeAndBillingAction.asp?action=enter&amp;pt=HOMEVIEW&amp;ptab=HV_TB','_blank');void(0);" style="text-decoration:none">PLANVIEW: timesheet</a></li>
+                        <li><a href="javascript:window.open('http://sbasrng01.posam.sk/servio-ui/page/im/TicketReporterNewPage.xhtml','_blank');void(0);" style="text-decoration:none">SNG: Nov&yacute; tiket</a></li>
+                        <li><a href="javascript:window.open('https://webmail.posam.sk','_blank');void(0);" style="text-decoration:none">Webmail</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="lotusTitleBar">
+            <div class="lotusRightCorner">
+                <div class="lotusInner">
+                    <div class="lotusTitleBarContent"><h2 class="lotusEllipsis" title="Doch&aacute;dzka" style="margin: 0">Dochádzka</h2>
+                        <ul id="view:_id1:_id2:oneUILayout1_tb_container" class="lotusTabs lotusTabsIndented">
+                            <li class="lotusSelected"><div><a href="/iis/hr/dochadzka.nsf/home.xsp" style="text-decoration:none">Moja doch&aacute;dzka</a></div></li>
+                        </ul>
+                    </div></div>
+            </div>
+        </div>
+        <div class="lotusPlaceBar">
+            <div class="lotusRightCorner">
+                <div class="lotusInner">
+                </div>
+            </div>
+        </div>
+        <div class="lotusMain">
+            <div class="lotusColRight"><div id="view:_id1:_id2:callback2">
+                <div id="view:_id1:_id2:callback2:_id95:widgetContainer1" class="lotusWidget2">
+                    <h2 style="margin: 0px; cursor: auto;"><span class="lotusLeft">Doch&aacute;dzka</span></h2><div class="lotusWidgetBody" id="view:_id1:_id2:callback2:_id95:widgetContainer1_contents" style="display: block;"><select id="view:_id1:_id2:callback2:_id95:comboBox1" name="view:_id1:_id2:callback2:_id95:comboBox1" class="xspComboBox" size="1">	<option value="1" selected="selected">Moja doch&aacute;dzka</option>
+                </select><br>
+                    <br>
+                    <div id="view:_id1:_id2:callback2:_id95:narefresh">
+                        <div id="view:_id1:_id2:callback2:_id95:narefresh2">
+                            <label id="view:_id1:_id2:callback2:_id95:label3" for="view:_id1:_id2:callback2:_id95:inputText2" class="xspTextLabel">Od :</label>&nbsp;<input dojoType="dijit.form.DateTextBox" style="width:90px" id="view:_id1:_id2:callback2:_id95:djDateTextBox1" name="view:_id1:_id2:callback2:_id95:djDateTextBox1" value="2015-12-01"><br>
+                            <br>
+                            <label id="view:_id1:_id2:callback2:_id95:label4" for="view:_id1:_id2:callback2:_id95:inputText3" class="xspTextLabel">Do :</label>&nbsp;<input dojoType="dijit.form.DateTextBox" style="width:90px" id="view:_id1:_id2:callback2:_id95:djDateTextBox2" name="view:_id1:_id2:callback2:_id95:djDateTextBox2" value="2015-12-01"><br>
+                            <br>
+                            <button style="width:46.0px;font-size:8pt" class="lotusBtn" type="button" name="view:_id1:_id2:callback2:_id95:button1" id="view:_id1:_id2:callback2:_id95:button1">V&#269;era</button><button style="width:109.0px;font-size:8pt" class="lotusBtn" type="button" name="view:_id1:_id2:callback2:_id95:button2" id="view:_id1:_id2:callback2:_id95:button2">Posledn&yacute;&nbsp;t&yacute;&#382;de&#328;</button><br>
+                            <br>
+                            <div id="view:_id1:_id2:callback2:_id95:panelko">
+                                <a id="view:_id1:_id2:callback2:_id95:_id115:link1" href="https://iis.posam.sk/iis/hr/dochadzka.nsf/home.xsp" class="xspLink">Hud&aacute;k J&aacute;n</a><br><table id="view:_id1:_id2:callback2:_id95:_id115:dataTable1" style="width:100%" class="lotusTable"><tbody>
+                            <tr><td style="width:40.0px" class="xspColumn"><span id="view:_id1:_id2:callback2:_id95:_id115:dataTable1:0:cas:computedField1" style="font-weight:bold;color:rgb(0,64,128)" class="xspTextComputedField">1.12.2015</span><br>
+                                &nbsp;&nbsp;<span id="view:_id1:_id2:callback2:_id95:_id115:dataTable1:0:cas:computedField3" class="xspTextComputedField">07:03</span></td>
+                                <td style="width:40.0px" class="xspColumn"><br>
+                                    <span id="view:_id1:_id2:callback2:_id95:_id115:dataTable1:0:doch:computedField5" class="xspTextComputedField">pr&iacute;chod</span></td>
+                                <td style="width:40.0px" class="xspColumn"><br>
+                                    <span id="view:_id1:_id2:callback2:_id95:_id115:dataTable1:0:operacia:computedField2" class="xspTextComputedField">pr&aacute;ca</span></td>
+                            </tr>
+                            </tbody>
+                            </table>
+                                <div id="view:_id1:_id2:callback2:_id95:repeat1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div></div>
+            </div>
+            </div>
+            <a id="lotusMainContent" name="lotusMainContent"></a><div class="lotusContent" role="main"><div id="view:_id1:_id2:_id4:widgetContainer1" class="lotusWidget2">
+            <h2 style="margin: 0px; cursor: auto;"><span class="lotusLeft">Doch&aacute;dzka : Hud&aacute;k J&aacute;n</span></h2><div class="lotusWidgetBody" id="view:_id1:_id2:_id4:widgetContainer1_contents" style="display: block;"><div id="view:_id1:_id2:_id4:_id5:vstupneUdaje">
+            <div class="navigacia"><span id="view:_id1:_id2:_id4:_id5:computedField4"><span id="view:_id1:_id2:_id4:_id5:computedField5" class="predchadzajuci">2014</span></span>
+                <span id="view:_id1:_id2:_id4:_id5:computedField6" class="rok">2015</span><span id="view:_id1:_id2:_id4:_id5:_id7:1:span1"><span id="view:_id1:_id2:_id4:_id5:_id7:1:computedField7" class="mesiac">Janu&aacute;r</span></span>
+                <span id="view:_id1:_id2:_id4:_id5:_id7:2:span1"><span id="view:_id1:_id2:_id4:_id5:_id7:2:computedField7" class="mesiac">Febru&aacute;r</span></span>
+                <span id="view:_id1:_id2:_id4:_id5:_id7:3:span1"><span id="view:_id1:_id2:_id4:_id5:_id7:3:computedField7" class="mesiac">Marec</span></span>
+                <span id="view:_id1:_id2:_id4:_id5:_id7:4:span1"><span id="view:_id1:_id2:_id4:_id5:_id7:4:computedField7" class="mesiac">Apr&iacute;l</span></span>
+                <span id="view:_id1:_id2:_id4:_id5:_id7:5:span1"><span id="view:_id1:_id2:_id4:_id5:_id7:5:computedField7" class="mesiac">M&aacute;j</span></span>
+                <span id="view:_id1:_id2:_id4:_id5:_id7:6:span1"><span id="view:_id1:_id2:_id4:_id5:_id7:6:computedField7" class="mesiac">J&uacute;n</span></span>
+                <span id="view:_id1:_id2:_id4:_id5:_id7:7:span1"><span id="view:_id1:_id2:_id4:_id5:_id7:7:computedField7" class="mesiac">J&uacute;l</span></span>
+                <span id="view:_id1:_id2:_id4:_id5:_id7:8:span1"><span id="view:_id1:_id2:_id4:_id5:_id7:8:computedField7" class="mesiac">August</span></span>
+                <span id="view:_id1:_id2:_id4:_id5:_id7:9:span1"><span id="view:_id1:_id2:_id4:_id5:_id7:9:computedField7" class="mesiac">September</span></span>
+                <span id="view:_id1:_id2:_id4:_id5:_id7:10:span1"><span id="view:_id1:_id2:_id4:_id5:_id7:10:computedField7" class="mesiac">Okt&oacute;ber</span></span>
+                <span id="view:_id1:_id2:_id4:_id5:_id7:11:span1"><span id="view:_id1:_id2:_id4:_id5:_id7:11:computedField7" class="mesiac aktualny">November</span></span>
+                <span id="view:_id1:_id2:_id4:_id5:_id7:12:span1"><span id="view:_id1:_id2:_id4:_id5:_id7:12:computedField7" class="mesiac">December</span></span>
+                <span id="view:_id1:_id2:_id4:_id5:span2"><span id="view:_id1:_id2:_id4:_id5:computedField3" class="nasledujuci">2016</span></span>
+            </div>
+            <div class="lotusChunk"><span id="view:_id1:_id2:_id4:_id5:label3" class="lotusTiny">Fond pracovnej doby :</span><span id="view:_id1:_id2:_id4:_id5:computedField1" class="lotusTiny lotusBold">168</span></div>
+        </div>
+            <button class="lotusBtn" type="button" name="view:_id1:_id2:_id4:_id9:button1" id="view:_id1:_id2:_id4:_id9:button1">Stiahnu&#357;</button><div id="view:_id1:_id2:_id4:_id9:tabbedPanel1"><div class="lotusTabContainer"><ul class="lotusTabs"><li><a id="view:_id1:_id2:_id4:_id9:tabPanel1" href="#">Dni</a></li><li><a id="view:_id1:_id2:_id4:_id9:tabPanel2" href="#">Mesiac</a></li><li class="lotusSelected"><a id="view:_id1:_id2:_id4:_id9:tabPanel3" href="#">Pr&iacute;chody/Odchody</a><p id="view:_id1:_id2:_id4:_id9:tabPanel3_accessHelper" style="position:absolute;top:-3000px;width:500px;">Active Tab</p></li></ul></div>
+                <div><table id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1" class="lotusTable"><thead><tr><th class="stlpecCas" scope="col"><span style="text-align:left;display:block;">D&aacute;tum</span>
+                </th><th class="stlpecCas" scope="col"><span>Pr&iacute;chod</span>
+                </th><th class="stlpecCas" scope="col"><span>Odchod</span>
+                </th><th class="stlpecCas" scope="col"><span>Pr&aacute;ca</span>
+                </th><th class="stlpecCas" scope="col"><span>SC</span>
+                </th><th class="stlpecCas" scope="col"><span>DV</span>
+                </th><th class="stlpecCas" scope="col"><span>&#352;S</span>
+                </th><th class="stlpecCas" scope="col"><span>PAR</span>
+                </th><th class="stlpecCas" scope="col"><span>PN</span>
+                </th><th class="stlpecCas" scope="col"><span>O&#268;R</span>
+                </th><th class="stlpecCas" scope="col"><span>NHV</span>
+                </th><th class="stlpecCas" scope="col"><span>NPV</span>
+                </th><th class="stlpecCas" scope="col"><span><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:column11:label3" class="stlpecCas">Lek&aacute;r</span></span>
+                </th></tr>
+                </thead><tbody>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:0:Datum:datum" class="xspTextComputedField">Pondelok, 2. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:0:column1:od" class="xspTextComputedField">0:00</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:0:column12:do" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:0:column2:praca" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:0:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:0:column4:dovolenka" class="xspTextComputedField">08:00</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:0:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:0:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:0:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:0:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:0:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:0:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:0:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:1:Datum:datum" class="xspTextComputedField">Utorok, 3. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:1:column1:od" class="xspTextComputedField">7:06</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:1:column12:do" class="xspTextComputedField">15:51</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:1:column2:praca" class="xspTextComputedField">08:45</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:1:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:1:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:1:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:1:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:1:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:1:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:1:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:1:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:1:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:2:Datum:datum" class="xspTextComputedField">&#352;tvrtok, 5. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:2:column1:od" class="xspTextComputedField">7:34</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:2:column12:do" class="xspTextComputedField">11:33</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:2:column2:praca" class="xspTextComputedField">03:58</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:2:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:2:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:2:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:2:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:2:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:2:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:2:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:2:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:2:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:3:Datum:datum" class="xspTextComputedField">&#352;tvrtok, 5. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:3:column1:od" class="xspTextComputedField">12:13</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:3:column12:do" class="xspTextComputedField">16:05</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:3:column2:praca" class="xspTextComputedField">03:52</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:3:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:3:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:3:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:3:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:3:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:3:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:3:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:3:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:3:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:4:Datum:datum" class="xspTextComputedField">Piatok, 6. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:4:column1:od" class="xspTextComputedField">7:29</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:4:column12:do" class="xspTextComputedField">16:15</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:4:column2:praca" class="xspTextComputedField">08:45</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:4:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:4:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:4:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:4:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:4:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:4:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:4:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:4:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:4:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:5:Datum:datum" class="xspTextComputedField">Pondelok, 9. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:5:column1:od" class="xspTextComputedField">7:50</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:5:column12:do" class="xspTextComputedField">16:39</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:5:column2:praca" class="xspTextComputedField">08:48</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:5:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:5:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:5:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:5:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:5:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:5:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:5:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:5:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:5:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:6:Datum:datum" class="xspTextComputedField">Utorok, 10. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:6:column1:od" class="xspTextComputedField">6:57</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:6:column12:do" class="xspTextComputedField">16:14</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:6:column2:praca" class="xspTextComputedField">09:17</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:6:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:6:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:6:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:6:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:6:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:6:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:6:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:6:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:6:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:7:Datum:datum" class="xspTextComputedField">Streda, 11. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:7:column1:od" class="xspTextComputedField">7:22</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:7:column12:do" class="xspTextComputedField">16:14</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:7:column2:praca" class="xspTextComputedField">08:51</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:7:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:7:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:7:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:7:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:7:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:7:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:7:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:7:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:7:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:8:Datum:datum" class="xspTextComputedField">&#352;tvrtok, 12. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:8:column1:od" class="xspTextComputedField">7:26</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:8:column12:do" class="xspTextComputedField">8:16</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:8:column2:praca" class="xspTextComputedField">00:50</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:8:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:8:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:8:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:8:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:8:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:8:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:8:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:8:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:8:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:9:Datum:datum" class="xspTextComputedField">&#352;tvrtok, 12. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:9:column1:od" class="xspTextComputedField">8:42</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:9:column12:do" class="xspTextComputedField">10:54</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:9:column2:praca" class="xspTextComputedField">02:12</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:9:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:9:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:9:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:9:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:9:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:9:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:9:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:9:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:9:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:10:Datum:datum" class="xspTextComputedField">&#352;tvrtok, 12. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:10:column1:od" class="xspTextComputedField">11:56</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:10:column12:do" class="xspTextComputedField">14:45</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:10:column2:praca" class="xspTextComputedField">02:48</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:10:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:10:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:10:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:10:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:10:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:10:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:10:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:10:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:10:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:11:Datum:datum" class="xspTextComputedField">&#352;tvrtok, 12. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:11:column1:od" class="xspTextComputedField">14:58</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:11:column12:do" class="xspTextComputedField">16:30</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:11:column2:praca" class="xspTextComputedField">01:31</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:11:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:11:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:11:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:11:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:11:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:11:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:11:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:11:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:11:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:12:Datum:datum" class="xspTextComputedField">Piatok, 13. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:12:column1:od" class="xspTextComputedField">7:28</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:12:column12:do" class="xspTextComputedField">8:37</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:12:column2:praca" class="xspTextComputedField">01:08</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:12:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:12:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:12:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:12:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:12:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:12:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:12:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:12:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:12:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:13:Datum:datum" class="xspTextComputedField">Piatok, 13. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:13:column1:od" class="xspTextComputedField">8:37</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:13:column12:do" class="xspTextComputedField">17:00</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:13:column2:praca" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:13:column3:sluzobnacesta" class="xspTextComputedField">08:22</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:13:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:13:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:13:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:13:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:13:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:13:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:13:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:13:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:14:Datum:datum" class="xspTextComputedField">Pondelok, 16. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:14:column1:od" class="xspTextComputedField">7:22</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:14:column12:do" class="xspTextComputedField">16:12</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:14:column2:praca" class="xspTextComputedField">08:49</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:14:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:14:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:14:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:14:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:14:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:14:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:14:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:14:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:14:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:15:Datum:datum" class="xspTextComputedField">Utorok, 17. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:15:column1:od" class="xspTextComputedField">0:00</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:15:column12:do" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:15:column2:praca" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:15:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:15:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:15:column5:sviatok" class="xspTextComputedField">08:00</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:15:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:15:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:15:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:15:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:15:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:15:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:16:Datum:datum" class="xspTextComputedField">Streda, 18. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:16:column1:od" class="xspTextComputedField">7:34</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:16:column12:do" class="xspTextComputedField">16:09</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:16:column2:praca" class="xspTextComputedField">08:34</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:16:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:16:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:16:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:16:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:16:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:16:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:16:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:16:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:16:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:17:Datum:datum" class="xspTextComputedField">&#352;tvrtok, 19. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:17:column1:od" class="xspTextComputedField">7:14</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:17:column12:do" class="xspTextComputedField">10:43</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:17:column2:praca" class="xspTextComputedField">03:29</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:17:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:17:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:17:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:17:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:17:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:17:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:17:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:17:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:17:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:18:Datum:datum" class="xspTextComputedField">&#352;tvrtok, 19. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:18:column1:od" class="xspTextComputedField">11:28</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:18:column12:do" class="xspTextComputedField">16:19</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:18:column2:praca" class="xspTextComputedField">04:50</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:18:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:18:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:18:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:18:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:18:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:18:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:18:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:18:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:18:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:19:Datum:datum" class="xspTextComputedField">Piatok, 20. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:19:column1:od" class="xspTextComputedField">7:51</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:19:column12:do" class="xspTextComputedField">16:08</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:19:column2:praca" class="xspTextComputedField">08:17</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:19:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:19:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:19:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:19:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:19:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:19:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:19:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:19:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:19:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:20:Datum:datum" class="xspTextComputedField">Pondelok, 23. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:20:column1:od" class="xspTextComputedField">7:18</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:20:column12:do" class="xspTextComputedField">16:09</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:20:column2:praca" class="xspTextComputedField">08:50</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:20:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:20:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:20:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:20:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:20:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:20:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:20:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:20:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:20:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:21:Datum:datum" class="xspTextComputedField">Utorok, 24. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:21:column1:od" class="xspTextComputedField">7:58</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:21:column12:do" class="xspTextComputedField">12:00</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:21:column2:praca" class="xspTextComputedField">04:01</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:21:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:21:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:21:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:21:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:21:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:21:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:21:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:21:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:21:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:22:Datum:datum" class="xspTextComputedField">Utorok, 24. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:22:column1:od" class="xspTextComputedField">12:36</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:22:column12:do" class="xspTextComputedField">15:47</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:22:column2:praca" class="xspTextComputedField">03:11</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:22:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:22:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:22:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:22:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:22:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:22:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:22:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:22:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:22:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:23:Datum:datum" class="xspTextComputedField">Streda, 25. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:23:column1:od" class="xspTextComputedField">7:27</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:23:column12:do" class="xspTextComputedField">10:44</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:23:column2:praca" class="xspTextComputedField">03:16</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:23:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:23:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:23:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:23:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:23:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:23:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:23:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:23:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:23:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:24:Datum:datum" class="xspTextComputedField">Streda, 25. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:24:column1:od" class="xspTextComputedField">11:30</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:24:column12:do" class="xspTextComputedField">16:13</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:24:column2:praca" class="xspTextComputedField">04:43</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:24:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:24:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:24:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:24:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:24:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:24:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:24:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:24:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:24:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:25:Datum:datum" class="xspTextComputedField">&#352;tvrtok, 26. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:25:column1:od" class="xspTextComputedField">7:11</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:25:column12:do" class="xspTextComputedField">10:46</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:25:column2:praca" class="xspTextComputedField">03:35</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:25:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:25:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:25:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:25:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:25:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:25:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:25:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:25:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:25:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:26:Datum:datum" class="xspTextComputedField">&#352;tvrtok, 26. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:26:column1:od" class="xspTextComputedField">11:28</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:26:column12:do" class="xspTextComputedField">15:55</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:26:column2:praca" class="xspTextComputedField">04:26</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:26:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:26:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:26:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:26:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:26:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:26:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:26:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:26:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:26:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:27:Datum:datum" class="xspTextComputedField">Piatok, 27. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:27:column1:od" class="xspTextComputedField">7:32</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:27:column12:do" class="xspTextComputedField">16:05</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:27:column2:praca" class="xspTextComputedField">08:32</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:27:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:27:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:27:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:27:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:27:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:27:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:27:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:27:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:27:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                <tr><td class="xspColumn"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:28:Datum:datum" class="xspTextComputedField">Pondelok, 30. november 2015</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:28:column1:od" class="xspTextComputedField">7:21</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:28:column12:do" class="xspTextComputedField">16:14</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:28:column2:praca" class="xspTextComputedField">08:52</span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:28:column3:sluzobnacesta" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:28:column4:dovolenka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:28:column5:sviatok" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:28:column6:paragraf" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:28:column7:pnka" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:28:column8:ocr" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:28:column9:nahradnevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:28:column10:neplatenevolno" class="xspTextComputedField"></span></td>
+                    <td class="stlpecCas"><span id="view:_id1:_id2:_id4:_id9:tabPanel3:_id67:dataTable1:28:column11:lekar" class="xspTextComputedField"></span></td>
+                </tr>
+                </tbody>
+                </table>
+                </div></div></div></div>
+        </div>
+        </div>
+        <div class="lotusFooter">
+            <table cellspacing="0" role="contentinfo"><tbody><tr><td><ul>
+                <li><a href="http://sps01" style="text-decoration:none">Sharepoint (sps01)</a></li>
+                <li><a href="http://planview.posam.sk" style="text-decoration:none">PlanView</a></li>
+                <li><a href="javascript:window.open('http://sbasrng01.posam.sk/servio-ui/page/im/TicketReporterNewPage.xhtml','_blank');void(0);" style="text-decoration:none">SNG: Nov&yacute; tiket</a></li>
+                <li><a href="https://iis.posam.sk/appl/teamroom.nsf" style="text-decoration:none">Teamroom (DSW1)</a></li>
+            </ul>
+            </td><td><ul>
+                <li><a href="javascript:window.open('https://webmail.posam.sk','_blank');void(0);" style="text-decoration:none">Webmail</a></li>
+            </ul>
+            </td><td class="lotusLast"><ul>
+                <li><a href="http://google.com" style="text-decoration:none">Google</a></li>
+            </ul>
+            </td></tr></tbody></table></div>
+        <table class="lotusLegal" cellspacing="0" role="presentation">
+            <tr>
+                <td class="lotusLicense">(c) 2010-2011 PosAm</td></tr>
+        </table>
+    </div>
+
+    <input type="hidden" name="$$viewid" id="view:_id1__VUID" value="!e9m1f39iwf!">
+    <input type="hidden" name="$$xspsubmitid">
+    <input type="hidden" name="$$xspexecid">
+    <input type="hidden" name="$$xspsubmitvalue">
+    <input type="hidden" name="$$xspsubmitscroll">
+    <input type="hidden" name="view:_id1" value="view:_id1"></form>
+<script type="text/javascript">
+
+if(!XSP.keepAlive){XSP.keepAlive=function xe_ka(){setTimeout('XSP.keepAlive()',101000);dojo.xhrGet({url:'/iis/hr/dochadzka.nsf/xsp/.ibmmodres/ping',handleAs:'text',preventCache:true});};setTimeout('XSP.keepAlive()',101000)}
+XSP.addOnLoad(function() {
+XSP.attachPartial("view:_id1:_id2:callback2:_id95:_id96", "view:_id1:_id2:callback2:_id95:comboBox1", null, "onchange", function(){}, 2, "view:_id1:_id2:callback2:_id95:narefresh");
+XSP.attachPartial("view:_id1:_id2:callback2:_id95:_id104", "view:_id1:_id2:callback2:_id95:djDateTextBox1", "view:_id1:_id2:callback2:_id95:djDateTextBox1", "onChange", function(){}, 1, "view:_id1:_id2:callback2:_id95:widgetContainer1");
+XSP.attachPartial("view:_id1:_id2:callback2:_id95:_id108", "view:_id1:_id2:callback2:_id95:djDateTextBox2", "view:_id1:_id2:callback2:_id95:djDateTextBox2", "onChange", function(){}, 1, "view:_id1:_id2:callback2:_id95:widgetContainer1");
+XSP.attachPartial("view:_id1:_id2:callback2:_id95:_id111", "view:_id1:_id2:callback2:_id95:button1", "view:_id1:_id2:callback2:_id95:button1", "onclick", function(){}, 2, "view:_id1:_id2:callback2:_id95:widgetContainer1");
+XSP.attachPartial("view:_id1:_id2:callback2:_id95:_id112", "view:_id1:_id2:callback2:_id95:button2", "view:_id1:_id2:callback2:_id95:button2", "onclick", function(){}, 2, "view:_id1:_id2:callback2:_id95:widgetContainer1");
+XSP.attachEvent("view:_id1:_id2:_id4:_id5:eventHandler1", "view:_id1:_id2:_id4:_id5:computedField4", "onclick", null, true, 1);
+XSP.attachEvent("view:_id1:_id2:_id4:_id5:_id7:1:eventHandler2", "view:_id1:_id2:_id4:_id5:_id7:1:span1", "onclick", null, true, 1);
+XSP.attachEvent("view:_id1:_id2:_id4:_id5:_id7:2:eventHandler2", "view:_id1:_id2:_id4:_id5:_id7:2:span1", "onclick", null, true, 1);
+XSP.attachEvent("view:_id1:_id2:_id4:_id5:_id7:3:eventHandler2", "view:_id1:_id2:_id4:_id5:_id7:3:span1", "onclick", null, true, 1);
+XSP.attachEvent("view:_id1:_id2:_id4:_id5:_id7:4:eventHandler2", "view:_id1:_id2:_id4:_id5:_id7:4:span1", "onclick", null, true, 1);
+XSP.attachEvent("view:_id1:_id2:_id4:_id5:_id7:5:eventHandler2", "view:_id1:_id2:_id4:_id5:_id7:5:span1", "onclick", null, true, 1);
+XSP.attachEvent("view:_id1:_id2:_id4:_id5:_id7:6:eventHandler2", "view:_id1:_id2:_id4:_id5:_id7:6:span1", "onclick", null, true, 1);
+XSP.attachEvent("view:_id1:_id2:_id4:_id5:_id7:7:eventHandler2", "view:_id1:_id2:_id4:_id5:_id7:7:span1", "onclick", null, true, 1);
+XSP.attachEvent("view:_id1:_id2:_id4:_id5:_id7:8:eventHandler2", "view:_id1:_id2:_id4:_id5:_id7:8:span1", "onclick", null, true, 1);
+XSP.attachEvent("view:_id1:_id2:_id4:_id5:_id7:9:eventHandler2", "view:_id1:_id2:_id4:_id5:_id7:9:span1", "onclick", null, true, 1);
+XSP.attachEvent("view:_id1:_id2:_id4:_id5:_id7:10:eventHandler2", "view:_id1:_id2:_id4:_id5:_id7:10:span1", "onclick", null, true, 1);
+XSP.attachEvent("view:_id1:_id2:_id4:_id5:_id7:11:eventHandler2", "view:_id1:_id2:_id4:_id5:_id7:11:span1", "onclick", null, true, 1);
+XSP.attachEvent("view:_id1:_id2:_id4:_id5:_id7:12:eventHandler2", "view:_id1:_id2:_id4:_id5:_id7:12:span1", "onclick", null, true, 1);
+XSP.attachEvent("view:_id1:_id2:_id4:_id5:eventHandler3", "view:_id1:_id2:_id4:_id5:span2", "onclick", null, true, 1);
+XSP.attachEvent("view:_id1:_id2:_id4:_id9:_id10", "view:_id1:_id2:_id4:_id9:button1", "onclick", null, true, 2);
+XSP.attachEvent("view:_id1:_id2:_id4:_id9:tabPanel1", null, "onclick", null, true, 2);XSP.attachEvent("view:_id1:_id2:_id4:_id9:tabPanel2", null, "onclick", null, true, 2);XSP.attachEvent("view:_id1:_id2:_id4:_id9:tabPanel3", null, "onclick", null, true, 2);
+}); 
+
+</script>
+</body>
+</html>

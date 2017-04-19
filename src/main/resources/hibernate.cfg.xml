@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+
+	<!-- datasource connection properties -->
+	<property name="connection.datasource">java:comp/env/jdbc/prolik</property>
+	<!-- pripojenie do db asp test
+	<property name="connection.datasource">java:comp/env/jdbc/prolik_test</property>
+	<property name="hibernate.default_schema">prolik</property>
+	--> 
+
+	<!-- dialect for Oracle SQL Server -->
+	<property name="dialect">org.hibernate.dialect.Oracle9Dialect</property>
+
+	<!-- povolenie skrolovatelneho query  -->
+	<property name="hibernate.jdbc.use_scrollable_resultset">true</property>
+
+	<!--Ci sa maju vypisovat vsetky SQL prikazy na stdout.-->
+	<property name="show_sql">false</property>
+	<property name="format_sql">false</property>
+
+	<!-- 
+		Prinuti Hibernate, aby usporiadaval updaty, podla ID objektov, ktore updatuje. Znizuje
+		sa tak riziko moznych transakcnych deadlokov v systemoch s vysokou konkurentnostou (vela
+		konkurentnych pouzivatelov).
+	-->
+	<property name="order_updates">true</property>
+
+	<!-- 
+		Ak je zapnute, Hibernate bude generovat komentare k sql prikazom aby ulahcil debug... (teda
+		ake hodnoty binduje k prepared statementom. Toto by malo byt nastavene na true len v pripade
+		testovania funkcnosti			
+	-->
+	<property name="use_sql_comments">false</property>
+
+
+	<!--
+		Urcuje, kedy ma Hibernate releasnut JDBC Connection spat do poolu. 
+		Moznosti:
+		on_close (default) -> po skonceni pripojenia 
+		after_transaction -> po skonceni transakcie (vhodne ked sa nebezi nad JTA transakciami)
+		after_statement -> vhodne, ked sa bezi nad JTA transakciami (pozor, dost agresivna taktika)
+		auto -> rozhodne podla toho ci sa bezi nad JTA ci sa ma pouzit after_transaction alebo 
+		after statement
+	-->
+	<property name="connection_release_mode">after_transaction</property>
+
+
+	<!-- Urcuje, aky typ cache sa da pouzit	(stare nastavenie)
+	<property name="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</property>
+	-->
+	<!-- nastavenie pre OSCache - z vyuzitim clusteringu !-->
+	<property name="hibernate.cache.provider_class">sk.posam.prolik.server.util.EhCacheProvider</property>
+	<property name="hibernate.cache.use_query_cache">true</property>
+	<property name="hibernate.cache.use_second_level_cache">true</property>
+	
+	<!-- p3f0: nastavenia kvoli blobom !-->
+	<property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+	<property name="hibernate.jdbc.use_streams_for_binary">true</property>
+	<property name="hibernate.jdbc.batch_size">0</property>
+
+	<!-- Vyzva !-->
+	<mapping resource="Vyzva.hbm.xml" />
+</session-factory>
+</hibernate-configuration>
