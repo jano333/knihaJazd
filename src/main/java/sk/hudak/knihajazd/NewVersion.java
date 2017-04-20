@@ -20,9 +20,8 @@ public class NewVersion {
 
     private void haha() {
         try {
-            File inputTxt = new File("C:\\PosAm\\Auto\\dochadzka.txt");
+            File inputTxt = new File("src/main/resources/dochadzka.txt");
             List<String> lines = Files.readAllLines(inputTxt.toPath(), StandardCharsets.UTF_8);
-
 
             List<String> oneDayLines = new ArrayList<>(4);
             String fistTwoChars = null;
@@ -108,13 +107,13 @@ public class NewVersion {
     }
 
     private String calculateOdchodZDomu(String prichodDochadzka) {
-        if(prichodDochadzka.equals("-")){
+        if (prichodDochadzka.equals("-")) {
             return prichodDochadzka;
         }
 
         DateTime dateTime = new DateTime()
-        .withHourOfDay(Integer.valueOf(prichodDochadzka.substring(0, 2)))
-        .withMinuteOfHour(Integer.valueOf(prichodDochadzka.substring(3, prichodDochadzka.length())));
+                .withHourOfDay(Integer.valueOf(prichodDochadzka.substring(0, 2)))
+                .withMinuteOfHour(Integer.valueOf(prichodDochadzka.substring(3, prichodDochadzka.length())));
 
         int random = new Random().nextInt(20 - 15) + 15;
         dateTime = dateTime.minusMinutes(random);
@@ -125,7 +124,7 @@ public class NewVersion {
     }
 
     private String calculatePrichodPraca(String prichodDochadzka) {
-        if(prichodDochadzka.equals("-")){
+        if (prichodDochadzka.equals("-")) {
             return prichodDochadzka;
         }
 
@@ -142,7 +141,7 @@ public class NewVersion {
     }
 
     private String calculateOdchodZPraca(String odchodDochadzka) {
-        if(odchodDochadzka.equals("-")){
+        if (odchodDochadzka.equals("-")) {
             return odchodDochadzka;
         }
 
@@ -159,7 +158,7 @@ public class NewVersion {
     }
 
     private String calculatePrichodDomov(String odchodDochadzka) {
-        if(odchodDochadzka.equals("-")){
+        if (odchodDochadzka.equals("-")) {
             return odchodDochadzka;
         }
 
